@@ -1,8 +1,23 @@
-import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import NoPage from "./pages/NotFoundPage";
+
 import "./App.css";
 
 const App = () => {
-  return <div className="text-3xl font-bold underline">App</div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
+        </Route>
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 export default App;
