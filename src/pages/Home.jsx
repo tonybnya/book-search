@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <div>
       <HomeHero />
-      <div className="py-20 px-10">
-        <p className="text-white">Books</p>
+      <div className="py-20 px-10 flex flex-col items-center">
+        <p className="text-white max-sm:text-2xl lg:text-4xl">Books</p>
         <div className="mt-10">
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-3">
             <BookCard
