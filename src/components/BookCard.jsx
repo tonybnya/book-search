@@ -4,8 +4,8 @@ const BookCard = ({ book_id, cover, name, authors, year, rating, url }) => {
   return (
     <div key={book_id} className="pt-6">
       <div className="flow-root bg-black text-white rounded-md px-4 pb-8 drop-shadow-lg drop-shadow-white/50">
-        <div className="-mt-6">
-          <div className="flex items-center justify-center">
+        <div className="-mt-6 flex flex-col items-center justify-center">
+          <div className="flex items-center justify-center h-80 w-40">
             <img
               src={
                 // Removes compression to get higher quality
