@@ -4,3 +4,7 @@
 @theme {
   --font-liter: "Liter", sans-serif;
 }
+
+.my-shadow {
+  text-shadow: 5px 5px 90px #602f32;
+}
