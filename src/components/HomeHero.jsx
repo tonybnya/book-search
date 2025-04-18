@@ -13,7 +13,7 @@ const HomeHero = () => {
       </div>
       <div className="relative font-liter text-white flex flex-col items-center justify-center gap-8 w-full max-w-xl px-4">
         <div className="max-sm:text-2xl lg:text-4xl font-bold">
-          <span className="text-blue-700">Book</span> <span>Search</span>
+          <span className="text-blue-700">Book</span> Search
         </div>
 
         <form className="flex items-center w-full mx-auto">
@@ -29,7 +29,7 @@ const HomeHero = () => {
           />
           <button
             type="submit"
-            className="cursor-pointer px-4 py-3 ms-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 hover:scale-105"
+            className="cursor-pointer px-4 py-3 ms-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-950 hover:border-blue-950 hover:scale-105"
           >
             <svg
               className="w-4 h-4"
