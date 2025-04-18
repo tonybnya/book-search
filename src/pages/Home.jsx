@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import BookCard from "../components/BookCard";
+import Spinner from "../components/Spinner";
 import bg from "/library.jpg";
 
 const Home = () => {
@@ -117,8 +118,7 @@ const Home = () => {
         <p className="text-white max-sm:text-2xl lg:text-4xl">Books</p>
         {isLoading ? (
           <div className="flex justify-center items-center pt-10">
-            {/* <Spinner /> */}
-            <p className="animate-bounce">Loading...</p>
+            <Spinner />
           </div>
         ) : error ? (
           <div className="flex justify-center items-center pt-10">
