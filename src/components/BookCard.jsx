@@ -16,7 +16,7 @@ const BookCard = ({ book_id, cover, name, authors, year, rating, url }) => {
             />
           </div>
           <div className="text-center justify-center items-center">
-            <h3 className="mt-4 text-lg font-bold w-full break-words overflow-x-auto text-primary tracking-tight">
+            <h3 className="mt-4 text-sm font-bold w-full break-words overflow-x-auto text-red-900 tracking-tight">
               {name}
             </h3>
             <p className="mt-2 text-base leading-relaxed text-secondary">
@@ -25,7 +25,11 @@ const BookCard = ({ book_id, cover, name, authors, year, rating, url }) => {
             <p className="font-bold text-secondary">
               Rating: <span className="text-yellow-400">{rating}</span>
             </p>
-            <a href={url} className="mt-4 block text-active underline">
+            <a
+              href={url}
+              target="_blank"
+              className="mt-4 block text-active underline"
+            >
               Read More
             </a>
           </div>
